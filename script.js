@@ -2,38 +2,38 @@
 const task = [];
 
 // function to add a task
-function getTaskDetails(task) {
-  // Ask the user to give the task title (name of the taskk
-  // prompt formated to match the title prompt.png
-  const title = prompt("enter task ${taskNumer} title:"); 
-  
+function getTaskDetails(taskNumber) {
+  // Ask the user to give the task title (name of the task)
+  // prompt formatted to match the title prompt.png
+  const taskTitle = prompt(`enter task ${taskNumber} title:`);
+
   // Ask the user for a short description of what must be done
-  const description = prompt("enter task ${taskNumer} description:");
-}
+  const taskDescription = prompt(`enter task ${taskNumber} description:`);
 
-//Ask the user for status (todo, doing, done)
-let status;
-while (true) {
-  // We change whatever the user typed into lowercase (so "DONE" or "Done" still works).
-  status = prompt(
-    "enter task ${taskNumber} status (todo, doing, or done)):"
-  ).toLowerCase();
+  // Ask the user for status (todo, doing, done)
+  let taskStatus;
+  while (true) {
+    // We change whatever the user typed into lowercase (so "DONE" or "Done" still works).
+    taskStatus = prompt(
+      `enter task ${taskNumber} status (todo, doing, or done):`
+    ).toLowerCase();
 
-  // Check if the user’s answer is one of the allowed words
-  if (["todo", "doing", "done"].includes(status)) {
-    break; // If it’s correct, stop asking
-  } else {
-    // If it’s wrong, tells the user and ask again.
-    alert("Invalid status. Please enter 'todo', 'doing', or 'done'.");
+    // Check if the user’s answer is one of the allowed words
+    if (["todo", "doing", "done"].includes(taskStatus)) {
+      break; // If it’s correct, stop asking
+    } else {
+      // If it’s wrong, tells the user and ask again.
+      alert("Invalid status. Please enter 'todo', 'doing', or 'done'.");
+    }
   }
-}
 
-// create a task object after validation is complete
-const NewTask = {
-  title: taskTitle,
-  description: taskDescription,
-  status: taskStatus,
-};
+  // create a task object after validation is complete
+  return {
+    title: taskTitle,
+    description: taskDescription,
+    status: taskStatus,
+  };
+}
 
 // We only need 2 tasks because the project brief says so.
 // Call our function twice, one for Task 1 and one for Task 2.
