@@ -10,26 +10,27 @@ function getTaskDetails(task) {
 // Ask the user for a short description of what must be done
 const description = prompt("enter task ${taskNumer} description:");
 
-let satus;
+//Ask the user for status (todo, doing, done)
+let status;
 while (true) {
-  // Force everything to lowercase
-  satus = prompt(
-    "enter task ${taskNumer} status (todo, doing, or done):"
+  // We change whatever the user typed into lowercase (so "DONE" or "Done" still works).
+  status = prompt(
+    "enter task ${taskNumber} status (todo, doing, or done)):"
   ).toLowerCase();
-}
-  // Only allow the 3 statuses we want: todo, doing, done
-  // Check if the status is one of the allowed options
-if (statusInput === 'todo' || statusInput === 'doing' || statusInput === 'done') {
-        // If correct, save the status and stop the loop
-        taskStatus = statusInput;
-        break;
-    } else {}
-        // If wrong, show a message and ask again
-        alert("Invalid status. Please enter 'todo', 'doing', or 'done'.");
 
-    // Save the task information as an object
-const newTask = { tittle: taskTitle,
-    description: taskDescription,
-    status: taskStatus
+  // Check if the user’s answer is one of the allowed words
+  if (["todo", "doing", "done"].includes(status)) {
+    break; // If it’s correct, stop asking
+  } else {
+    // If it’s wrong, tells the user and ask again.
+    alert("Invalid status. Please enter 'todo', 'doing', or 'done'.");
+  }
+}
+
+// create a task object after validation is complete
+const NewTask = {
+  title: taskTitle,
+  description: taskDescription,
+  status: taskStatus
 };
 
