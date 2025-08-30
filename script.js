@@ -15,7 +15,7 @@ function getTaskDetails(taskNumber) {
   while (true) {
     // We change whatever the user typed into lowercase (so "DONE" or "Done" still works).
     taskStatus = prompt(
-      `enter task ${taskNumber} status (todo, doing, or done):`
+      `enter task ${taskNumber} status ('todo', 'doing', or 'done')`
     ).toLowerCase();
 
     // Check if the user’s answer is one of the allowed words
