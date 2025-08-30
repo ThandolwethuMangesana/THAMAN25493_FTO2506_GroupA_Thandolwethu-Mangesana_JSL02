@@ -1,10 +1,10 @@
-# JSL02 Project Brief: Task Input and Status Validation System
+# Kanban Task Management: Task Input and Status Validation System
 
-## Important Prerequisite
+## Project Description
 
-1. Before starting this challenge, ensure that you have **corrected your JSL01 project (HTML and CSS)** using the solution provided. This will help maintain consistency and ensure you build on a solid foundation.
-2. **Check the project user stories in your student dashboard**, make sure you understand what is required for each feature.
+This project is a web-based Kanban task management tool designed to help users organise and track their work visually.
 
+The interface is built with clean, semantic HTML and styled with CSS to resemble a professional Kanban board. The JavaScript logic handles user prompts, validates inputs, and outputs results to the console.
 ## Overview
 
 This project involves implementing a JavaScript-based task entry system where users can input two tasks with complete details, ensuring data consistency and validation. The system will guide users through entering valid task titles, descriptions, and statuses, enforcing correct formatting while maintaining code clarity and maintainability.
@@ -45,7 +45,7 @@ A functional task entry system that ensures accurate data collection, validation
 
 - When there is a completed task:
 
-  ![invalid status](./explainer-images/completed%20task%20log.png)
+  ![invalid status](./explainerimages/completed%20task%20log.png)
 
 - When there are no completed tasks:
 
