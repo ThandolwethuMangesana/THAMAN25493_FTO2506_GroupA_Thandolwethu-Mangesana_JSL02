@@ -24,33 +24,33 @@ The interface is built with clean, semantic HTML and styled with CSS to resemble
 - **JavaScript (ES6)** – Dynamic functionality, prompts, validation, and console output.
 
 
-## Code Quality & Maintainability
+## 🚀 Setup Instructions
 
-- Use descriptive variable names to enhance readability and maintainability.
-- Include clear comments explaining complex logic and functionality for easier understanding.
+1. **Clone the repository** git clone [repository-url]
+2. **Open the project folder** Navigate to the directory where the files are stored
+3. **Run locally** Open index.html in your preferred browser (Chrome, Firefox, etc.). The task input prompts will appear automatically.
 
 ## Expected Outcome
-
 A functional task entry system that ensures accurate data collection, validation, and structured storage while maintaining clean and well-documented code for easy future modifications.
 
-**Prompt Input Example**
+**Prompt Input**
 
-- The program must prompt users for task 1 title, descrition and status inputs, it must do the same for task 2 information
+- Enter task details - Provide a title, description, and status
 
-  ![title prompt](./explainer-images/title%20prompt.png)
+  ![title prompt](./new-explainer-images/[title-prompt%201.png) ![titleDescription](./new-explainer-images/task-description.png)
 
 **Invalid status**
 
-- If the user enters a status other than `todo`, `doing` or `done`, the program must alert the user of this and return to prompting them to enter a status.
+- If the status is invalid (e.g., "in progress"), you’ll see an alert and be asked again.
 
-  ![invalid status](./explainer-images/invalid%20status.png)
+  ![invalid status](./new-explainer-images/Invalid-status.png)
 
 **Console log**
 
-- When there is a completed task:
+- A list of completed tasks:
 
-  ![invalid status](./explainerimages/completed%20task%20log.png)
+  ![invalid status](./new-explainer-images/completed%20task.png)
 
-- When there are no completed tasks:
+- Motivational message when no completed task:
 
-  ![invalid status](./explainer-images/no%20completed%20tasks%20log.png)
+  ![invalid status](./new-explainer-images/no%20completed%20task.png)
