@@ -1,24 +1,28 @@
 # Kanban Task Management: Task Input and Status Validation System
 
-## Project Description
+## 📌Project Description
 
 This project is a web-based Kanban task management tool designed to help users organise and track their work visually.
 
 The interface is built with clean, semantic HTML and styled with CSS to resemble a professional Kanban board. The JavaScript logic handles user prompts, validates inputs, and outputs results to the console.
-## Overview
+---
 
-This project involves implementing a JavaScript-based task entry system where users can input two tasks with complete details, ensuring data consistency and validation. The system will guide users through entering valid task titles, descriptions, and statuses, enforcing correct formatting while maintaining code clarity and maintainability.
+## ✨ Features
+- **Interactive Task Input** - On page load, the application automatically prompts the user to enter a title, description, and status for two tasks.
+- **Status Validation** - Only three statuses are accepted: todo, doing, or done. If the user enters anything else, an alert appears and they must try again.
+- **Case-Insensitive Handling** - Status entries like "Todo", "DONE", or "Doing" are all accepted and converted to lowercase for consistency.
+- **Console Output** If there are completed tasks (status: "done"), their title and status are displayed in the console.
+- **Clean, Maintainable Code** - HTML, CSS, and JavaScript are separated into dedicated files, following best practices for readability and maintainability.
 
-## Key Objectives
 
-### Logic & User Interaction
 
-- Ensure the JavaScript file is correctly linked to the HTML document.
-- Prompt the user to enter details (title, description, status) for two separate tasks and store them in variables.
-- Convert all status inputs to lowercase automatically for consistency.
-- Validate the status input to allow only "todo", "doing", or "done" and repeatedly prompt the user until a valid status is entered.
-- Display the title and status of completed tasks (status: "done") in the console.
-- If no tasks are marked as "done", show a motivational message in the console: "No tasks completed, let's get to work!".
+
+### Technologies
+
+- **HTML5** – Semantic structure and layout.
+- **CSS3** – Styling, colours, and responsive design.
+- **JavaScript (ES6)** – Dynamic functionality, prompts, validation, and console output.
+
 
 ## Code Quality & Maintainability
 
