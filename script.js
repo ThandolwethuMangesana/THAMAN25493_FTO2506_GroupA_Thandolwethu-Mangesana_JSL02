@@ -5,10 +5,11 @@ const task = [];
 function getTaskDetails(task) {
   // Ask the user to give the task title (name of the taskk
   // prompt formated to match the title prompt.png
-  const title = prompt("enter task ${taskNumer} title:");
+  const title = prompt("enter task ${taskNumer} title:"); 
+  
+  // Ask the user for a short description of what must be done
+  const description = prompt("enter task ${taskNumer} description:");
 }
-// Ask the user for a short description of what must be done
-const description = prompt("enter task ${taskNumer} description:");
 
 //Ask the user for status (todo, doing, done)
 let status;
@@ -31,25 +32,24 @@ while (true) {
 const NewTask = {
   title: taskTitle,
   description: taskDescription,
-  status: taskStatus
+  status: taskStatus,
 };
 
 // We only need 2 tasks because the project brief says so.
 // Call our function twice, one for Task 1 and one for Task 2.
-  const tasks = [getTaskDetails(1), getTaskDetails(2)];
+const tasks = [getTaskDetails(1), getTaskDetails(2)];
 
-  //use .filter() to make a new list that only has the tasks with status = "done"
-  const completedTasks = tasks.filter((task) => task.status === "done");
+//use .filter() to make a new list that only has the tasks with status = "done"
+const completedTasks = tasks.filter((task) => task.status === "done");
 
-  // If there is at least 1 completed task, show them in the console.
+// If there is at least 1 completed task, show them in the console.
 if (completedTasks.length > 0) {
   // Show each finished task in the console
   completedTasks.forEach((task) => {
     console.log(`Task Completed: ${task.title} - ${task.status}`);
   });
-
-  } else {
- // If no tasks are done, show a motivational message
- // matches the no completed task log.png
+} else {
+  // If no tasks are done, show a motivational message
+  // matches the no completed task log.png
   console.log("No tasks completed, let's get to work!");
 }
