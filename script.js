@@ -40,3 +40,15 @@ const NewTask = {
 
   //use .filter() to make a new list that only has the tasks with status = "done"
   const completedTasks = tasks.filter((task) => task.status === "done");
+
+  // If there is at least 1 completed task, show them in the console.
+if (completedTasks.length > 0) {
+  // Show each finished task in the console
+  completedTasks.forEach((task) => {
+    console.log(`Task Completed: ${task.title} - ${task.status}`);
+  });
+
+  } else {
+ // If no tasks are done, show a motivational message
+  console.log("No tasks completed, let's get to work!");
+}
