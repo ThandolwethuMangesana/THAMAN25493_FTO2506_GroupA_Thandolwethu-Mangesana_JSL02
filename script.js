@@ -50,5 +50,6 @@ if (completedTasks.length > 0) {
 
   } else {
  // If no tasks are done, show a motivational message
+ // matches the no completed task log.png
   console.log("No tasks completed, let's get to work!");
 }
