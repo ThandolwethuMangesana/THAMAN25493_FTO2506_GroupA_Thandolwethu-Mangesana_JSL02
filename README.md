@@ -30,7 +30,7 @@ The interface is built with clean, semantic HTML and styled with CSS to resemble
 2. **Open the project folder** Navigate to the directory where the files are stored
 3. **Run locally** Open index.html in your preferred browser (Chrome, Firefox, etc.). The task input prompts will appear automatically.
 
-## Expected Outcome
+## Outcome
 A functional task entry system that ensures accurate data collection, validation, and structured storage while maintaining clean and well-documented code for easy future modifications.
 
 **Prompt Input**
