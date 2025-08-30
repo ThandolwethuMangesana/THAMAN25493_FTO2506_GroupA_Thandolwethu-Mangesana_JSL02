@@ -34,3 +34,9 @@ const NewTask = {
   status: taskStatus
 };
 
+// We only need 2 tasks because the project brief says so.
+// Call our function twice, one for Task 1 and one for Task 2.
+  const tasks = [getTaskDetails(1), getTaskDetails(2)];
+
+  //use .filter() to make a new list that only has the tasks with status = "done"
+  const completedTasks = tasks.filter((task) => task.status === "done");
