@@ -14,7 +14,22 @@ let satus;
 while (true) {
   // Force everything to lowercase
   satus = prompt(
-    "enter task ${taskNumer} status (to do, in progress, completed):"
+    "enter task ${taskNumer} status (todo, doing, or done):"
   ).toLowerCase();
 }
+  // Only allow the 3 statuses we want: todo, doing, done
+  // Check if the status is one of the allowed options
+if (statusInput === 'todo' || statusInput === 'doing' || statusInput === 'done') {
+        // If correct, save the status and stop the loop
+        taskStatus = statusInput;
+        break;
+    } else {}
+        // If wrong, show a message and ask again
+        alert("Invalid status. Please enter 'todo', 'doing', or 'done'.");
+
+    // Save the task information as an object
+const newTask = { tittle: taskTitle,
+    description: taskDescription,
+    status: taskStatus
+};
 
