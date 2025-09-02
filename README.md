@@ -4,6 +4,7 @@
 
 This project is a web-based Kanban task management tool designed to help users organise and track their work visually.
 The interface is built with clean, semantic HTML and styled with CSS to resemble a professional Kanban board. The JavaScript logic handles user prompts, validates inputs, and outputs results to the console.
+
 ---
 
 ## ✨ Features
